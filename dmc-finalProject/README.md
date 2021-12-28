@@ -28,22 +28,7 @@ df_sensors.head()
 ```
 
 
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -295,19 +280,6 @@ pd.DataFrame(varX).head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -429,19 +401,6 @@ pd.DataFrame(varY).head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -571,19 +530,6 @@ comparisonTable
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -742,19 +688,6 @@ pd.DataFrame(normalizedData)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -996,19 +929,6 @@ df_sensors.iloc[:,2:-1].head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1195,173 +1115,6 @@ head(data_sensors)
 install.packages('CTT')
 library(CTT) 
 ```
-
-    --- Please select a CRAN mirror for use in this session ---
-    Secure CRAN mirrors 
-    
-     1: 0-Cloud [https]
-     2: Australia (Canberra) [https]
-     3: Australia (Melbourne 1) [https]
-     4: Australia (Melbourne 2) [https]
-     5: Australia (Perth) [https]
-     6: Austria [https]
-     7: Belgium (Brussels) [https]
-     8: Brazil (PR) [https]
-     9: Brazil (RJ) [https]
-    10: Brazil (SP 1) [https]
-    11: Brazil (SP 2) [https]
-    12: Bulgaria [https]
-    13: Canada (MB) [https]
-    14: Canada (ON 2) [https]
-    15: Canada (ON 3) [https]
-    16: Chile (Santiago) [https]
-    17: China (Beijing 2) [https]
-    18: China (Hefei) [https]
-    19: China (Hong Kong) [https]
-    20: China (Guangzhou) [https]
-    21: China (Lanzhou) [https]
-    22: China (Nanjing) [https]
-    23: China (Shanghai 1) [https]
-    24: China (Shanghai 2) [https]
-    25: China (Shenzhen) [https]
-    26: Costa Rica [https]
-    27: Cyprus [https]
-    28: Czech Republic [https]
-    29: Denmark [https]
-    30: East Asia [https]
-    31: Ecuador (Cuenca) [https]
-    32: Ecuador (Quito) [https]
-    33: Estonia [https]
-    34: France (Lyon 1) [https]
-    35: France (Lyon 2) [https]
-    36: France (Marseille) [https]
-    37: France (Montpellier) [https]
-    38: France (Paris 1) [https]
-    39: Germany (Erlangen) [https]
-    40: Germany (Leipzig) [https]
-    41: Germany (Göttingen) [https]
-    42: Germany (Münster) [https]
-    43: Germany (Regensburg) [https]
-    44: Greece [https]
-    45: Hungary [https]
-    46: Iceland [https]
-    47: India [https]
-    48: Indonesia (Jakarta) [https]
-    49: Iran [https]
-    50: Italy (Milano) [https]
-    51: Italy (Padua) [https]
-    52: Japan (Tokyo) [https]
-    53: Korea (Gyeongsan-si) [https]
-    54: Korea (Seoul 1) [https]
-    55: Korea (Ulsan) [https]
-    56: Malaysia [https]
-    57: Mexico (Mexico City) [https]
-    58: Mexico (Texcoco) [https]
-    59: Morocco [https]
-    60: Netherlands [https]
-    61: New Zealand [https]
-    62: Norway [https]
-    63: Russia (Moscow) [https]
-    64: South Africa (Johannesburg) [https]
-    65: Spain (A Coruña) [https]
-    66: Spain (Madrid) [https]
-    67: Sweden (Borås) [https]
-    68: Sweden (Umeå) [https]
-    69: Switzerland [https]
-    70: Taiwan (Taipei) [https]
-    71: Turkey (Denizli) [https]
-    72: Turkey (Istanbul) [https]
-    73: Turkey (Mersin) [https]
-    74: UK (Bristol) [https]
-    75: UK (London 1) [https]
-    76: USA (IA) [https]
-    77: USA (KS) [https]
-    78: USA (MI) [https]
-    79: USA (OH) [https]
-    80: USA (OR) [https]
-    81: USA (TN) [https]
-    82: USA (TX 1) [https]
-    83: Uruguay [https]
-    84: (other mirrors)
-    
-    Selection: 8
-
-
-    R[write to console]: trying URL 'https://cran-r.c3sl.ufpr.br/src/contrib/CTT_2.3.3.tar.gz'
-    
-    R[write to console]: Content type 'application/x-gzip'
-    R[write to console]:  length 17062 bytes (16 KB)
-    
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: =
-    R[write to console]: 
-    
-    R[write to console]: downloaded 16 KB
-    
-    
-    R[write to console]: 
-    
-    R[write to console]: 
-    R[write to console]: The downloaded source packages are in
-    	‘/private/var/folders/j3/m3sy6zld00ggzypxy638ltmh0000gn/T/RtmpYYnLsW/downloaded_packages’
-    R[write to console]: 
-    R[write to console]: 
-    
-    R[write to console]: Updating HTML index of packages in '.Library'
-    
-    R[write to console]: Making 'packages.html' ...
-    R[write to console]:  done
-    
-
-
 
 ```r
 %%R

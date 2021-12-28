@@ -18,23 +18,7 @@ df_lac = pd.read_excel(url)
 df_lac.head()
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -119,23 +103,7 @@ df_lac.describe()
 # Valor máximo: 360
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -281,11 +249,6 @@ sns.distplot(x = df_lac.TiempoPNP, kde = True,);
 plt.show()
 ```
 
-    /Users/dev-kazum/developer/venv-python/tasks/lib/python3.9/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
-      warnings.warn(msg, FutureWarning)
-
-
-
     
 ![png](output_12_1.png)
     
@@ -297,12 +260,6 @@ plt.show()
 sns.distplot(x = df_lac.TiempoPNP, kde = True, hist_kws = {'cumulative': True}, kde_kws = {'cumulative': True});
 plt.show()
 ```
-
-    /Users/dev-kazum/developer/venv-python/tasks/lib/python3.9/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
-      warnings.warn(msg, FutureWarning)
-
-
-
     
 ![png](output_13_1.png)
     
@@ -345,144 +302,6 @@ library(rriskDistributions)
 library(MASS)
 library(dplyr)
 ```
-
-    --- Please select a CRAN mirror for use in this session ---
-    Secure CRAN mirrors 
-    
-     1: 0-Cloud [https]
-     2: Australia (Canberra) [https]
-     3: Australia (Melbourne 1) [https]
-     4: Australia (Melbourne 2) [https]
-     5: Australia (Perth) [https]
-     6: Austria [https]
-     7: Belgium (Brussels) [https]
-     8: Brazil (BA) [https]
-     9: Brazil (PR) [https]
-    10: Brazil (RJ) [https]
-    11: Brazil (SP 1) [https]
-    12: Brazil (SP 2) [https]
-    13: Bulgaria [https]
-    14: Canada (MB) [https]
-    15: Canada (ON 2) [https]
-    16: Canada (ON 3) [https]
-    17: Chile (Santiago) [https]
-    18: China (Beijing 2) [https]
-    19: China (Hefei) [https]
-    20: China (Hong Kong) [https]
-    21: China (Guangzhou) [https]
-    22: China (Lanzhou) [https]
-    23: China (Nanjing) [https]
-    24: China (Shanghai 1) [https]
-    25: China (Shanghai 2) [https]
-    26: China (Shenzhen) [https]
-    27: Costa Rica [https]
-    28: Cyprus [https]
-    29: Czech Republic [https]
-    30: Denmark [https]
-    31: East Asia [https]
-    32: Ecuador (Cuenca) [https]
-    33: Ecuador (Quito) [https]
-    34: Estonia [https]
-    35: France (Lyon 1) [https]
-    36: France (Lyon 2) [https]
-    37: France (Marseille) [https]
-    38: France (Montpellier) [https]
-    39: France (Paris 1) [https]
-    40: Germany (Erlangen) [https]
-    41: Germany (Leipzig) [https]
-    42: Germany (Göttingen) [https]
-    43: Germany (Münster) [https]
-    44: Germany (Regensburg) [https]
-    45: Greece [https]
-    46: Hungary [https]
-    47: Iceland [https]
-    48: India [https]
-    49: Indonesia (Jakarta) [https]
-    50: Iran [https]
-    51: Italy (Milano) [https]
-    52: Italy (Padua) [https]
-    53: Japan (Tokyo) [https]
-    54: Korea (Gyeongsan-si) [https]
-    55: Korea (Seoul 1) [https]
-    56: Korea (Ulsan) [https]
-    57: Malaysia [https]
-    58: Mexico (Mexico City) [https]
-    59: Mexico (Texcoco) [https]
-    60: Morocco [https]
-    61: Netherlands [https]
-    62: New Zealand [https]
-    63: Norway [https]
-    64: Russia (Moscow) [https]
-    65: South Africa (Johannesburg) [https]
-    66: Spain (A Coruña) [https]
-    67: Spain (Madrid) [https]
-    68: Sweden (Borås) [https]
-    69: Sweden (Umeå) [https]
-    70: Switzerland [https]
-    71: Taiwan (Taipei) [https]
-    72: Turkey (Denizli) [https]
-    73: Turkey (Istanbul) [https]
-    74: Turkey (Mersin) [https]
-    75: UK (Bristol) [https]
-    76: UK (London 1) [https]
-    77: USA (IA) [https]
-    78: USA (KS) [https]
-    79: USA (MI) [https]
-    80: USA (OH) [https]
-    81: USA (OR) [https]
-    82: USA (TN) [https]
-    83: USA (TX 1) [https]
-    84: Uruguay [https]
-    85: (other mirrors)
-    
-    Selection: 8
-
-
-    R[write to console]: Warning:
-    R[write to console]:  unable to access index for repository https://nbcgib.uesc.br/mirrors/cran/src/contrib:
-      cannot open URL 'https://nbcgib.uesc.br/mirrors/cran/src/contrib/PACKAGES'
-    
-    R[write to console]: Warning:
-    R[write to console]:  unable to access index for repository https://nbcgib.uesc.br/mirrors/cran/bin/macosx/contrib/4.1:
-      cannot open URL 'https://nbcgib.uesc.br/mirrors/cran/bin/macosx/contrib/4.1/PACKAGES'
-    
-    R[write to console]: Warning:
-    R[write to console]:  unable to access index for repository https://nbcgib.uesc.br/mirrors/cran/src/contrib:
-      cannot open URL 'https://nbcgib.uesc.br/mirrors/cran/src/contrib/PACKAGES'
-    
-    R[write to console]: Warning:
-    R[write to console]:  unable to access index for repository https://nbcgib.uesc.br/mirrors/cran/bin/macosx/contrib/4.1:
-      cannot open URL 'https://nbcgib.uesc.br/mirrors/cran/bin/macosx/contrib/4.1/PACKAGES'
-    
-    R[write to console]: Warning:
-    R[write to console]:  unable to access index for repository https://nbcgib.uesc.br/mirrors/cran/src/contrib:
-      cannot open URL 'https://nbcgib.uesc.br/mirrors/cran/src/contrib/PACKAGES'
-    
-    R[write to console]: Warning:
-    R[write to console]:  unable to access index for repository https://nbcgib.uesc.br/mirrors/cran/bin/macosx/contrib/4.1:
-      cannot open URL 'https://nbcgib.uesc.br/mirrors/cran/bin/macosx/contrib/4.1/PACKAGES'
-    
-    R[write to console]: 
-    Attaching package: ‘dplyr’
-    
-    
-    R[write to console]: The following object is masked from ‘package:MASS’:
-    
-        select
-    
-    
-    R[write to console]: The following objects are masked from ‘package:stats’:
-    
-        filter, lag
-    
-    
-    R[write to console]: The following objects are masked from ‘package:base’:
-    
-        intersect, setdiff, setequal, union
-    
-    
-
-
 
 ```r
 %%R
