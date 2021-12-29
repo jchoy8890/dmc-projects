@@ -28,6 +28,8 @@ df_sensors.head()
 ```
 
 
+
+
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -1114,7 +1116,10 @@ head(data_sensors)
 
 install.packages('CTT')
 library(CTT) 
-```
+
+```   
+
+
 
 ```r
 %%R
@@ -1154,3 +1159,171 @@ Mientras que la variable numérica **S2** tiene una **asociación muy fuerte** c
 ## Pregunta Nº 4 
 
 > Crear un histograma que muestre en que valor de ciclos es más probable la falla de los aviones
+
+
+```python
+df_sensors_aux = df_sensors.groupby("Activo_id")
+df_sensors = df_sensors_aux.max()
+df_sensors = df_sensors.reset_index()
+```
+
+
+```python
+df_sensors = pd.DataFrame(df_sensors)
+```
+
+
+```python
+df_sensors = df_sensors.iloc[:, 0:2]
+```
+
+
+```python
+df_sensors
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Activo_id</th>
+      <th>ciclo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>192</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>287</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>189</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>269</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>188</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>259</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>13</td>
+      <td>163</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>15</td>
+      <td>207</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>16</td>
+      <td>209</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17</td>
+      <td>276</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>18</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>19</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20</td>
+      <td>234</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+sns.histplot(df_sensors.ciclo, bins = 10, kde = True)
+plt.show()
+```
+
+
+    
+![png](output_42_0.png)
+    
+
+
+#### Se visualiza que la mayor posibilidad de falla de aviones se encuentra entre los ciclos ~ 180 y ~ 190
